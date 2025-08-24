@@ -1,6 +1,7 @@
 # Reaction–Diffusion (Gray–Scott) Playground
 
 [App on Vercel](https://reaction-diffusion-playground.vercel.app/)
+
 A small React app that simulates the Gray–Scott reaction–diffusion model in real time. Two chemical species, *U* and *V*, diffuse and react over space; changing the feed (*F*), kill (*k*), and diffusion rates (*Dᵤ*, *Dᵥ*) produces spots, stripes, or maze-like patterns. Adjust parameters and watch patterns emerge. See the [Wikipedia page](https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system) for background.
 
 ## Features
