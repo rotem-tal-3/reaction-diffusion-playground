@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState, useCallback, useImperativeHandle } from "react";
 import type { JSX } from "react";
 
-declare module 'gif.js' { const GIF: any; export default GIF; }
-declare module 'gif.js/dist/gif.worker.js?url' { const url: string; export default url; }
+import GIF from 'gif.js';
+import GIFWorker from 'gif.js/dist/gif.worker.js?url';
 
 const clamp = (x: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, x));
 
@@ -71,9 +71,6 @@ interface GIFRecordOptions {
 export interface RDHandle {
     recordGIF: (opts?: GIFRecordOptions) => Promise<Blob>;
 }
-
-import GIF from 'gif.js';
-import GIFWorker from 'gif.js/dist/gif.worker.js?url';
 
 const ReactionDiffusionCanvas = React.forwardRef<RDHandle, RDCanvasProps>(function ReactionDiffusionCanvas({
     width = 500,
