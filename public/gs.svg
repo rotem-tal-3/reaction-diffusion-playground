@@ -1,0 +1,29 @@
+<!-- public/favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="64" x2="64" y2="0">
+      <stop stop-color="#4f46e5"></stop>
+      <stop offset="1" stop-color="#ec4899"></stop>
+    </linearGradient>
+    <radialGradient id="r" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".25"></stop>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded tile background -->
+  <rect width="64" height="64" rx="14" fill="url(#g)"></rect>
+
+  <!-- Diffusion “blobs” -->
+  <g fill="#fff" opacity=".95">
+    <circle cx="22" cy="24" r="4.2"></circle>
+    <circle cx="31" cy="22" r="2.3"></circle>
+    <circle cx="39" cy="26" r="4.5"></circle>
+    <circle cx="26" cy="36" r="5.2"></circle>
+    <circle cx="36" cy="39" r="2.8"></circle>
+    <circle cx="43" cy="33" r="2.0"></circle>
+  </g>
+
+  <!-- Soft highlight -->
+  <circle cx="32" cy="32" r="22" fill="url(#r)"></circle>
+</svg>
